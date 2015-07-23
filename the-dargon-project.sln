@@ -79,7 +79,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dargon-cli", "dargon-cli\da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dargon.ManageableServices", "libdargon.service-base\Dargon.ManageableServices.csproj", "{9CFA80EE-76DC-498C-9C4E-52891851944A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libdargon.ui-wpf", "libdargon.ui-wpf\libdargon.ui-wpf.csproj", "{01A4A8DE-41DB-4944-8D52-39FA519E00A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dargon.WpfBase", "libdargon.ui-wpf\Dargon.WpfBase.csproj", "{01A4A8DE-41DB-4944-8D52-39FA519E00A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dargon-manager", "dargon-manager\dargon-manager.csproj", "{5A16EF83-A8BA-44AD-8CCE-2923BD55E1A4}"
 EndProject

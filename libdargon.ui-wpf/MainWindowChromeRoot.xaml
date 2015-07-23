@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Dargon.Manager.MainWindowChrome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Dargon.Manager"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="550">
+   <Border Padding="7" BorderBrush="{DynamicResource WindowBorderBrush}" BorderThickness="1" Background="{DynamicResource WindowBackgroundBrush}" Name="resizeBorder">
+      <Grid Name="resizeBorderInnerGrid" Background="Red">
+         <Grid.RowDefinitions>
+            <!-- Header -->
+            <RowDefinition Height="Auto"/>
+            <!-- Dargon, Control Box -->
+            <RowDefinition Height="28px"/>
+            <!-- Dargon, AppName, MenuStrip = 26 + 2px padding -->
+            <RowDefinition />
+         </Grid.RowDefinitions>
+         <Rectangle Height="100" Grid.Row="0" ></Rectangle>
+         <Label Grid.Row="1">Hello</Label>
+      </Grid>
+   </Border>
+</UserControl>

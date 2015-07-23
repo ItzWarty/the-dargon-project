@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5A16EF83-A8BA-44AD-8CCE-2923BD55E1A4}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Dargon.Manager</RootNamespace>
     <AssemblyName>nest-main</AssemblyName>
@@ -119,6 +119,10 @@
     <Compile Include="Controllers\ModificationImportController.cs" />
     <Compile Include="Controllers\ModificationRepositoryController.cs" />
     <Compile Include="DargonManagerApplicationEgg.cs" />
+    <Compile Include="DesignTimeResourceDictionary.cs" />
+    <Compile Include="MainWindowChrome.xaml.cs">
+      <DependentUpon>MainWindowChrome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\SynchronizedModificationList.cs" />
     <Compile Include="Models\ImportValidityModel.cs" />
     <Compile Include="Models\ImportValidityModelImpl.cs" />
@@ -181,7 +185,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="DMJrColors.xaml">
+    <Page Include="Theme_White.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -193,7 +197,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DMWindowStyle.xaml">
+    <Page Include="MainWindowChrome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindowStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -246,7 +254,7 @@
     <Resource Include="Resources\Assets\ManagerLabel.fw.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\icon.ico" />
+    <Resource Include="Resources\dargon_head.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Assets\import_bad.png" />
@@ -277,9 +285,9 @@
       <Project>{df2d0693-ec29-4bff-a32d-c11f6d509b52}</Project>
       <Name>Dargon.ModificationRepositories.Api</Name>
     </ProjectReference>
-    <ProjectReference Include="..\libdargon.ui-wpf\libdargon.ui-wpf.csproj">
+    <ProjectReference Include="..\libdargon.ui-wpf\Dargon.WpfBase.csproj">
       <Project>{01a4a8de-41db-4944-8d52-39fa519e00a6}</Project>
-      <Name>libdargon.ui-wpf</Name>
+      <Name>Dargon.WpfBase</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
